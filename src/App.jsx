@@ -6,23 +6,39 @@ const App = () => {
   const [currentSection, setCurrentSection] = useState("home");
 
   const content = {
-    home: "Welcome to our company! We are excited to share our story and work with you.",
-    history: "Founded in 1907 by visionary innovators, our company has a legacy of excellence.",
+    home: "Welcome to Stellar Solutions! Your trusted partner in innovative problem-solving. Explore our journey, our team, and our exceptional portfolio of work.",
+    history: `
+      Stellar Solutions was founded in 1998 by a group of visionary engineers with the goal of solving complex problems with innovative technology.
+      Starting with just three employees in a small garage, the company has grown into an industry leader with global operations.
+      From its humble beginnings to its status as a tech powerhouse, Stellar Solutions has remained committed to excellence and innovation.
+    `,
     pastWork: [
-      "Project Alpha - Revolutionized e-commerce",
-      "Project Beta - Enhanced AI capabilities",
-      "Project Gamma - Streamlined logistics"
+      "Project Alpha - Revolutionized e-commerce platforms with AI-driven personalization.",
+      "Project Beta - Developed cutting-edge renewable energy solutions for smart cities.",
+      "Project Gamma - Created a logistics system that reduced delivery times by 30%.",
+      "Project Delta - Designed a healthcare app that improved patient-doctor communication.",
+      "Project Epsilon - Built a space exploration AI used by leading aerospace companies."
     ],
     staff: [
-      { name: "Alice Johnson", role: "CEO" },
-      { name: "Bob Smith", role: "CTO" },
-      { name: "Catherine Lee", role: "COO" }
+      { name: "Alice Johnson", role: "CEO", bio: "Alice is a visionary leader with over 20 years in tech innovation." },
+      { name: "Bob Smith", role: "CTO", bio: "Bob specializes in AI and machine learning, driving technical excellence." },
+      { name: "Catherine Lee", role: "COO", bio: "Catherine ensures operations run smoothly, with a focus on sustainability." },
+      { name: "David Kim", role: "Lead Engineer", bio: "David leads the development team with a passion for problem-solving." },
+      { name: "Elena Rodriguez", role: "Head of Marketing", bio: "Elena brings creativity and strategy to our brand messaging." }
     ],
-    contact: "Email us at contact@ourcompany.com or call us at (123) 456-7890.",
+    contact: `
+      We’d love to hear from you!
+      - Email us: contact@stellarsolutions.com
+      - Call us: (123) 456-7890
+      - Visit our HQ: 123 Innovation Blvd, Tech City, USA
+      Follow us on social media to stay updated!
+    `,
     externalLinks: [
       { text: "Our Blog", url: "https://example.com/blog" },
       { text: "Careers", url: "https://example.com/careers" },
-      { text: "Support", url: "https://example.com/support" }
+      { text: "Support", url: "https://example.com/support" },
+      { text: "LinkedIn", url: "https://linkedin.com/company/stellarsolutions" },
+      { text: "Instagram", url: "https://instagram.com/stellarsolutions" }
     ]
   };
 
